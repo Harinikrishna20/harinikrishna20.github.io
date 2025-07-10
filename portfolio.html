@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Harini K</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #0f0f1b;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #00f7ff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #00f7ff;
+    }
+
+    .portfolio-section {
+      padding: 60px 20px;
+      background-color: #0f0f1b;
+      text-align: center;
+    }
+
+    .portfolio-section h2 {
+      font-size: 36px;
+      color: #00f7ff;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .portfolio-card {
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.15);
+      transition: 0.3s;
+      text-align: left;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-card h3 {
+      color: #00f7ff;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-card p {
+      color: #ccc;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-card a {
+      display: inline-block;
+      color: #00f7ff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 8px;
+      transition: 0.3s;
+    }
+
+    .portfolio-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>Harini K</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="portfolio-section">
+    <h2>My Portfolio</h2>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="images/portfolio.png" alt="Project 1">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive personal website built using HTML, CSS, and JavaScript.</p>
+        <a href="https://harinikrishna20.github.io/" target="_blank">View Live</a>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>YouTube UI Clone</h3>
+        <p>A React-based clone of YouTube’s interface using Rapid API and styled components.</p>
+        <a href="https://youryoutube-clone-link.com" target="_blank">View Live</a>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="images/project3.jpg" alt="Project 3">
+        <h3>To do list App</h3>
+        <p>Uses JavaScript .</p>
+        <a href="https://harinikrishna20.github.io/to-do-list/" target="_blank">View Live</a>
+      </div>
+      <div class="portfolio-card">
+        <img src="images/project4.jpg" alt="Project 4">
+        <h3>Weather-app</h3>
+        <p>Weather-app with a live apk</p>
+        <a href=" https://harinikrishna20.github.io/weather-app/" target="_blank">View Live</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Harini K | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+
+  
